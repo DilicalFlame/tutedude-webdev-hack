@@ -22,6 +22,7 @@
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 .idea/**/shelf
+.idea/**/copilotDiffState.xml
 
 # AWS User-specific
 .idea/**/aws.xml
@@ -253,3 +254,5 @@ dist
 # typescript
 next-env.d.ts
 
+
+/app/generated/prisma
