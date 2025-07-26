@@ -26,3 +26,17 @@ model Vendor {
   createdAt       DateTime @default(now())
   updatedAt       DateTime @updatedAt
 }
+
+model Seller {
+  id              String   @id @default(uuid())
+  name            String
+  email           String   @unique
+  password        String
+  phone           String?
+  address         String?
+  businessName    String?
+  businessType    String?  // e.g., "Restaurant", "Cafe", "Food Truck", "Grocery Store"
+  businessLicense String?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
